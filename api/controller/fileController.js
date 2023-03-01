@@ -6,8 +6,6 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 
-
-
   const fileUpload = (req, res) => {
     if(req.body.file === ""){
       return res.status(404).json({
